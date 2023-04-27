@@ -14,21 +14,21 @@
     </template>
   </category>  
   
-<category>
+  <category>
     <pattern>*</pattern>
     <template>
-       Que bom te encontrar aqui <set name ="username"> <star/>,</set> em que posso ser útil ?
+      Que bom te encontrar aqui <set name ="username"> <star/>,</set> em que posso ser útil ?
        
-        <ol>
-            <li>Cardápio</li>
-            <li>Promoções do dia</li>
-            <li>Falar com um atendente</li>
-            <li>Sair</li>
-        </ol>
+      <ol>
+        <li>Cardápio</li>
+        <li>Promoções do dia</li>
+        <li>Falar com um atendente</li>
+        <li>Sair</li>
+      </ol>
     </template>
- </category>  
+  </category>  
   
- <category>
+  <category>
     <pattern>1</pattern>
       <template>
         Veja as opções disponíveis em nosso cardápio !,<br></br><br></br>
@@ -36,61 +36,67 @@
         <image>https://ibb.co/0jPdV8p</image>
         <image>https://ibb.co/2k5JNd3</image>
         
-        Você deseja falar com o atendente para realizar o seu pedido?
+        Você deseja falar com o atendente para realizar o seu pedido? ( S/N )
       </template>
- </category>
+  </category>
   
-<category>
-  <pattern>Sim</pattern>
+  <category>
+    <pattern>S</pattern>
       <template>Muito bem, estamos te transferindo para um atendente!</template>
- </category>
+   </category>
  
- <category>
-  <pattern>2</pattern>
-    <template>
+   <category>
+     <pattern>N</pattern>
+       <template>Agradecemos o contato <get name ="username"></get> Volte sempre!</template>
+   </category>
+
+   <category>
+     <pattern>2</pattern>
+       <template>
         ****************<br></br>
         Promoções do Dia<br></br>
         ****************<br></br><br></br>
         
-        1 - Frango e Hambúrguer:<br></br>
+        A - Frango e Hambúrguer:<br></br>
         COCÓ BURGUER<br></br>
         R$ 10,00<br></br>
         Pão, peito de frango, bife e salada <br></br><br></br>        
         
-        2 - Lanches Especiais:<br></br>
+        B - Lanches Especiais:<br></br>
         AMERICANO<br></br>
         R$ 12,00<br></br>
         Pão, 2 queijos, 2 ovos, 2 presuntos e salada<br></br><br></br>
         
-        3 - Mistos:<br></br>
+        C - Mistos:<br></br>
         R$ 5,50<br></br>
         Pão de fôrma, presento e queijo<br></br><br></br>
 
-        <br></br>Você deseja falar com o atendente para realizar o seu pedido?
-    </template>
-  </category>
- 
- <category>
-    <pattern>3</pattern>
-      <template>Muito bem, estamos te transferindo para um atendente!</template>
- </category>
+        <br></br>Você deseja falar com o atendente para realizar o seu pedido? ( S/N )
+       </template>
+   </category>
  
    <category>
-    <pattern>4</pattern>
-      <template>Agradecemos o contato, <get name ="username"></get> Volte sempre!</template>
- </category>
-<category>
-	<pattern>OLÁ</pattern>
-	<template>Olá</template>
-</category>
+     <pattern>3</pattern>
+       <template>Muito bem, estamos te transferindo para um atendente!</template>
+   </category>
+ 
+   <category>
+     <pattern>4</pattern>
+       <template>Agradecemos o contato <get name ="username"></get> Volte sempre!</template>
+   </category>
 
-<category>
-	<pattern>BOA NOITE</pattern>
-	<template>Boa noite.</template>
-</category>
+   <category>
+ 	 <pattern>OLÁ</pattern>
+	 <template>Olá</template>
+   </category>
 
-<category>
-    <pattern></pattern>
-    <template></template>
-</category>
+   <category>
+ 	 <pattern>BOA NOITE</pattern>
+	 <template>Boa noite.</template>
+   </category>
+
+   <category>
+     <pattern></pattern>
+     <template></template>
+   </category>
 </aiml>
